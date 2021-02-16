@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Quiz</title>
+</head>
+<body onload="startclock()">
+    <p  id="timeLeft">Time Left:</p>
+
+    
+
+   
+    <div  class="container" onload="startclock()">
+        <p id="question"></p>
+        <label class="choice" >
+            <input onclick="enable()" type="radio" value="1" name="option"> <span id="option1"></span>
+        </label>
+        <br>
+        <label class="choice">
+            <input onclick="enable()" type="radio" value="2" name="option"> <span id="option2"></span>
+        </label>
+        <br>
+        <label class="choice" >
+            <input onclick="enable()" type="radio" value="3" name="option"> <span id="option3"></span>
+        </label>
+        <br>
+        <!-- <label >
+            <input onclick="enable()" type="radio" value="4" name="option"> <span id="option4"></span>
+        </label> -->
+        <br>
+    
+        
+            <!-- <button class="btn btn-primary" id="btn" disabled  onclick="nextQuestion()">next</button> -->
+        <div>
+            <button class="btn btn-primary" id="btn" disabled  onclick="nextQuestion()">next</button>
+
+            <a href="index.html"><button class="btn btn-primary" id="btn">Back</button></a>
+        <!-- <a href="index.html"><button class="btn btn-primary"  id="btn" onclick="submit()">Submit Quiz</button></a> -->
+        </div>
+        <a href="index.html"><button class="btn btn-primary"  id="btn" onclick="submit()">Submit Quiz</button></a>
+        <!-- <button onclick="startclock();">Start</button>  -->
+        
+        
+    </div>
+
+
+
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
